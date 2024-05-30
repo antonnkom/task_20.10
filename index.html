@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="bg-color">
-        <div class="container nav-container">
+        <div class="container nav-container nav-wrapper">
             <div class="logo"><a class="logo__link" href="index.html">IC "Repair Design Project"</a></div>
 
             <nav class="nav">
@@ -141,120 +141,116 @@
         </section>
 
         <section id="control" class="control">
-            <div class="container">
-                <div class="control-container">
-                    <h2 class="subtitle title-white">online control</h2>
+            <div class="container control-container control-wrapper">
+                <h2 class="subtitle title-white">online control</h2>
 
-                    <div class="control-video-container">
-                        <div class="overflow"></div>
-                        <video id="control-video" class="control-video" poster="images/cover-for-video.jpg">
-                            <source src="#" type="video/mp4" id="control-video-source">
-                        </video>
-                        <button class="control-video-play"></button>
-                    </div>
+                <div class="control-video-container">
+                    <div class="overflow"></div>
+                    <video id="control-video" class="control-video" poster="images/cover-for-video.jpg">
+                        <source src="#" type="video/mp4" id="control-video-source">
+                    </video>
+                    <button class="control-video-play"></button>
+                </div>
 
-                    <div class="control-form-container">
-                        <p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!<br>
-                            Leave a request below and you will receive a link to the broadcast.</p>
+                <div class="control-form-container">
+                    <p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!<br>
+                        Leave a request below and you will receive a link to the broadcast.</p>
 
-                        <form action="/" method="post" class="control-form">
-                            <label for="control-name" class="label">Name
-                                <input type="text" id="control-name" class="input" name="control-name" placeholder="What is your name:">
+                    <form action="/" method="post" class="control-form">
+                        <label for="control-name" class="label">Name
+                            <input type="text" id="control-name" class="input" name="control-name" placeholder="What is your name:">
+                        </label>
+
+                        <label for="control-phone" class="label">Phone
+                            <input type="text" id="control-phone" class="input" name="control-phone" placeholder="Your phone number:">
+                        </label>
+
+                        <div class="control-checkbox">
+                            <label for="control-agree" class="label-checkbox">
+                                <input type="checkbox" id="control-agree" class="checkbox" name="control-agree" value="1" checked="checked">
+                                <span class="fake-checkbox"></span>
+                                <span class="text-checkbox">I agree to the processing of personal data</span>
                             </label>
+                        </div>
 
-                            <label for="control-phone" class="label">Phone
-                                <input type="text" id="control-phone" class="input" name="control-phone" placeholder="Your phone number:">
-                            </label>
-
-                            <div class="control-checkbox">
-                                <label for="control-agree" class="label-checkbox">
-                                    <input type="checkbox" id="control-agree" class="checkbox" name="control-agree" value="1" checked="checked">
-                                    <span class="fake-checkbox"></span>
-                                    <span class="text-checkbox">I agree to the processing of personal data</span>
-                                </label>
-                            </div>
-
-                            <button id="control-submit" class="button button--regular-large">Submit</button>
-                        </form>
-                    </div>
+                        <button id="control-submit" class="button button--regular-large">Submit</button>
+                    </form>
                 </div>
             </div>
         </section>
 
         <section id="services" class="services">
-            <div class="container">
-                <div class="services-container">
-                    <h2 class="subtitle">Types of repair</h2>
+            <div class="container services-container">
+                <h2 class="subtitle">Types of repair</h2>
 
-                    <div class="services-catalog">
-                        <div class="service-catalog__item">
-                            <div class="service-catalog__image">
-                                <picture>
-                                    <source srcset="images/service-image_1.avif" type="image/avif">
-                                    <source srcset="images/service-image_1.webp" type="image/webp">
-                                    <img src="images/service-image_1.jpg" alt="Redecorating">
-                                </picture>
-                            </div>
-
-                            <div class="service-catalog__desc">
-                                <h3 class="catalog-title">Redecorating</h3>
-                                <ul class="service-list">
-                                    <li class="service-list__item">Dismantling of old coatings</li>
-                                    <li class="service-list__item">Wallpapering</li>
-                                    <li class="service-list__item">Painting walls and ceilings</li>
-                                    <li class="service-list__item">Laying flooring</li>
-                                    <li class="service-list__item">Replacing plumbing</li>
-                                    <li class="service-list__item">Replacing sockets and switches</li>
-                                    <li class="service-list__item">Replacing doors</li>
-                                </ul>
-                                <button class="button button--bolder">from 900 rub / m2</button>
-                            </div>
+                <div class="services-catalog">
+                    <div class="service-catalog__item">
+                        <div class="service-catalog__image">
+                            <picture>
+                                <source srcset="images/service-image_1.avif" type="image/avif">
+                                <source srcset="images/service-image_1.webp" type="image/webp">
+                                <img src="images/service-image_1.jpg" alt="Redecorating">
+                            </picture>
                         </div>
-                        <div class="service-catalog__item">
-                            <div class="service-catalog__image">
-                                <picture>
-                                    <source srcset="images/service-image_2.avif" type="image/avif">
-                                    <source srcset="images/service-image_2.webp" type="image/webp">
-                                    <img src="images/service-image_2.jpg" alt="Overhaul">
-                                </picture>
-                            </div>
 
-                            <div class="service-catalog__desc">
-                                <h3 class="catalog-title">Overhaul</h3>
-                                <ul class="service-list">
-                                    <li class="service-list__item">Dismantling of old coatings</li>
-                                    <li class="service-list__item">Wallpapering</li>
-                                    <li class="service-list__item">Painting walls and ceilings</li>
-                                    <li class="service-list__item">Laying flooring</li>
-                                    <li class="service-list__item">Replacing plumbing</li>
-                                    <li class="service-list__item">Replacing sockets and switches</li>
-                                    <li class="service-list__item">Replacing doors</li>
-                                </ul>
-                                <button class="button button--bolder">from 1800 rub / m2</button>
-                            </div>
+                        <div class="service-catalog__desc">
+                            <h3 class="catalog-title">Redecorating</h3>
+                            <ul class="service-list">
+                                <li class="service-list__item">Dismantling of old coatings</li>
+                                <li class="service-list__item">Wallpapering</li>
+                                <li class="service-list__item">Painting walls and ceilings</li>
+                                <li class="service-list__item">Laying flooring</li>
+                                <li class="service-list__item">Replacing plumbing</li>
+                                <li class="service-list__item">Replacing sockets and switches</li>
+                                <li class="service-list__item">Replacing doors</li>
+                            </ul>
+                            <button class="button button--bolder">from 900 rub / m2</button>
                         </div>
-                        <div class="service-catalog__item">
-                            <div class="service-catalog__image">
-                                <picture>
-                                    <source srcset="images/service-image_3.avif" type="image/avif">
-                                    <source srcset="images/service-image_3.webp" type="image/webp">
-                                    <img src="images/service-image_3.jpg" alt="Designer Repair">
-                                </picture>
-                            </div>
+                    </div>
+                    <div class="service-catalog__item">
+                        <div class="service-catalog__image">
+                            <picture>
+                                <source srcset="images/service-image_2.avif" type="image/avif">
+                                <source srcset="images/service-image_2.webp" type="image/webp">
+                                <img src="images/service-image_2.jpg" alt="Overhaul">
+                            </picture>
+                        </div>
 
-                            <div class="service-catalog__desc">
-                                <h3 class="catalog-title">Designer repair</h3>
-                                <ul class="service-list">
-                                    <li class="service-list__item">Dismantling of old coatings</li>
-                                    <li class="service-list__item">Wallpapering</li>
-                                    <li class="service-list__item">Painting walls and ceilings</li>
-                                    <li class="service-list__item">Laying flooring</li>
-                                    <li class="service-list__item">Replacing plumbing</li>
-                                    <li class="service-list__item">Replacing sockets and switches</li>
-                                    <li class="service-list__item">Replacing doors</li>
-                                </ul>
-                                <button class="button button--bolder">from 4000 rub / m2</button>
-                            </div>
+                        <div class="service-catalog__desc">
+                            <h3 class="catalog-title">Overhaul</h3>
+                            <ul class="service-list">
+                                <li class="service-list__item">Dismantling of old coatings</li>
+                                <li class="service-list__item">Wallpapering</li>
+                                <li class="service-list__item">Painting walls and ceilings</li>
+                                <li class="service-list__item">Laying flooring</li>
+                                <li class="service-list__item">Replacing plumbing</li>
+                                <li class="service-list__item">Replacing sockets and switches</li>
+                                <li class="service-list__item">Replacing doors</li>
+                            </ul>
+                            <button class="button button--bolder">from 1800 rub / m2</button>
+                        </div>
+                    </div>
+                    <div class="service-catalog__item">
+                        <div class="service-catalog__image">
+                            <picture>
+                                <source srcset="images/service-image_3.avif" type="image/avif">
+                                <source srcset="images/service-image_3.webp" type="image/webp">
+                                <img src="images/service-image_3.jpg" alt="Designer Repair">
+                            </picture>
+                        </div>
+
+                        <div class="service-catalog__desc">
+                            <h3 class="catalog-title">Designer repair</h3>
+                            <ul class="service-list">
+                                <li class="service-list__item">Dismantling of old coatings</li>
+                                <li class="service-list__item">Wallpapering</li>
+                                <li class="service-list__item">Painting walls and ceilings</li>
+                                <li class="service-list__item">Laying flooring</li>
+                                <li class="service-list__item">Replacing plumbing</li>
+                                <li class="service-list__item">Replacing sockets and switches</li>
+                                <li class="service-list__item">Replacing doors</li>
+                            </ul>
+                            <button class="button button--bolder">from 4000 rub / m2</button>
                         </div>
                     </div>
                 </div>
@@ -262,107 +258,103 @@
         </section>
 
         <section id="advanteges" class="advanteges">
-            <div class="container">
-                <div class="advantages-container">
-                    <div class="advantages-block">
-                        <ul class="advantages-list">
-                            <li class="advantages-list__item">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</li>
-                            <li class="advantages-list__item">Free metering</li>
-                            <li class="advantages-list__item">Free consultation</li>
-                            <li class="advantages-list__item">Get a cost estimate and<br>the timing of your future repairs</li>
-                        </ul>
+            <div class="container advantages-container advantages-block-wrapper">
+                <div class="advantages-block">
+                    <ul class="advantages-list">
+                        <li class="advantages-list__item">Our specialist will arrive for measurements per day contact, or appoint a date convenient for you</li>
+                        <li class="advantages-list__item">Free metering</li>
+                        <li class="advantages-list__item">Free consultation</li>
+                        <li class="advantages-list__item">Get a cost estimate and<br>the timing of your future repairs</li>
+                    </ul>
+                </div>
+                <div class="advantages-block">
+                    <div class="advantages-form-container bg-color">
+                        <p class="advantages-title title-white">Leave a request for free<br>
+                            departure of the measurer</p>
+                        <form action="/" method="post" class="advantages-form">
+                            <label for="advantages-name" class="label label-white">Name
+                                <input type="text" id="advantages-name" class="input input--black" name="advantages-name" placeholder="What is your name:">
+                            </label>
+
+                            <label for="advantages-phone" class="label label-white">Phone
+                                <input type="text" id="advantages-phone" class="input input--black" name="advantages-phone" placeholder="Your phone number:">
+                            </label>
+
+                            <label for="advantages-email" class="label label-white">Email
+                                <input type="text" id="advantages-email" class="input input--black" name="advantages-email" placeholder="Your email:">
+                            </label>
+
+                            <div class="advantages-checkbox">
+                                <label for="advantages-agree" class="label-checkbox">
+                                    <input type="checkbox" id="advantages-agree" class="checkbox" name="advantages-agree" value="1" checked="checked">
+                                    <span class="fake-checkbox"></span>
+                                    <span class="text-checkbox title-white">I agree to the processing of personal data</span>
+                                </label>
+                            </div>
+
+                            <button id="advantages-submit" class="button button--regular-thin">Call the measurer</button>
+                        </form>
                     </div>
-                    <div class="advantages-block">
-                        <div class="advantages-form-container bg-color">
-                            <p class="advantages-title title-white">Leave a request for free<br>
-                                departure of the measurer</p>
-                            <form action="/" method="post" class="advantages-form">
-                                <label for="advantages-name" class="label label-white">Name
-                                    <input type="text" id="advantages-name" class="input input--black" name="advantages-name" placeholder="What is your name:">
-                                </label>
-    
-                                <label for="advantages-phone" class="label label-white">Phone
-                                    <input type="text" id="advantages-phone" class="input input--black" name="advantages-phone" placeholder="Your phone number:">
-                                </label>
-
-                                <label for="advantages-email" class="label label-white">Email
-                                    <input type="text" id="advantages-email" class="input input--black" name="advantages-email" placeholder="Your email:">
-                                </label>
-
-                                <div class="advantages-checkbox">
-                                    <label for="advantages-agree" class="label-checkbox">
-                                        <input type="checkbox" id="advantages-agree" class="checkbox" name="advantages-agree" value="1" checked="checked">
-                                        <span class="fake-checkbox"></span>
-                                        <span class="text-checkbox title-white">I agree to the processing of personal data</span>
-                                    </label>
-                                </div>
-
-                                <button id="advantages-submit" class="button button--regular-thin">Call the measurer</button>
-                            </form>
-                        </div>
-                        <p class="advantages-sale title-orange">Help save 10 - 20% of the<br>
-                            cost of materials</p>
-                    </div>
+                    <p class="advantages-sale title-orange">Help save 10 - 20% of the<br>
+                        cost of materials</p>
                 </div>
             </div>
         </section>
 
         <section id="gallery" class="gallery">
             <div class="overflow"></div>
-            <div class="container">
-                <div class="gallery-container">
-                    <div class="gallery-menu">
-                        <h2 class="title">We realize your<br>
-                            wildest fantasies</h2>
-                        
-                        <nav class="gallery-nav">
-                            <ul class="gallery-nav-list">
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link active">American classic</a></li>
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Empire</a></li>
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Classical</a></li>
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Loft</a></li>
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Minimalism</a></li>
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Provence</a></li>
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Romanticism</a></li>
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Scandinavian style</a></li>
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Mediterranean style</a></li>
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">High tech</a></li>
-                                <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Eclecticism</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+            <div class="container gallery-container gallery-wrapper">
+                <div class="gallery-menu">
+                    <h2 class="title">We realize your<br>
+                        wildest fantasies</h2>
+                    
+                    <nav class="gallery-nav">
+                        <ul class="gallery-nav-list">
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link active">American classic</a></li>
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Empire</a></li>
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Classical</a></li>
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Loft</a></li>
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Minimalism</a></li>
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Provence</a></li>
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Romanticism</a></li>
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Scandinavian style</a></li>
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Mediterranean style</a></li>
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">High tech</a></li>
+                            <li class="gallery-nav-list__item"><a href="#" class="gallery-nav-list__link">Eclecticism</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-                    <div class="gallery-col">
-                        <div class="gallery__item">
-                            <picture>
-                                <source srcset="images/gallery/photo-01.avif" type="image/avif">
-                                <source srcset="images/gallery/photo-01.webp" type="image/webp">
-                                <img src="images/gallery/photo-01.jpg" alt="American classic">
-                            </picture>
-                        </div>
-                        <div class="gallery__item">
-                            <picture>
-                                <source srcset="images/gallery/photo-02.avif" type="image/avif">
-                                <source srcset="images/gallery/photo-02.webp" type="image/webp">
-                                <img src="images/gallery/photo-02.jpg" alt="American classic">
-                            </picture>
-                        </div>
+                <div class="gallery-col">
+                    <div class="gallery__item">
+                        <picture>
+                            <source srcset="images/gallery/photo-01.avif" type="image/avif">
+                            <source srcset="images/gallery/photo-01.webp" type="image/webp">
+                            <img src="images/gallery/photo-01.jpg" alt="American classic">
+                        </picture>
                     </div>
-                    <div class="gallery-col">
-                        <div class="gallery__item">
-                            <picture>
-                                <source srcset="images/gallery/photo-03.avif" type="image/avif">
-                                <source srcset="images/gallery/photo-03.webp" type="image/webp">
-                                <img src="images/gallery/photo-03.jpg" alt="American classic">
-                            </picture>
-                        </div>
-                        <div class="gallery__item">
-                            <picture>
-                                <source srcset="images/gallery/photo-04.avif" type="image/avif">
-                                <source srcset="images/gallery/photo-04.webp" type="image/webp">
-                                <img src="images/gallery/photo-04.jpg" alt="American classic">
-                            </picture>
-                        </div>
+                    <div class="gallery__item">
+                        <picture>
+                            <source srcset="images/gallery/photo-02.avif" type="image/avif">
+                            <source srcset="images/gallery/photo-02.webp" type="image/webp">
+                            <img src="images/gallery/photo-02.jpg" alt="American classic">
+                        </picture>
+                    </div>
+                </div>
+                <div class="gallery-col">
+                    <div class="gallery__item">
+                        <picture>
+                            <source srcset="images/gallery/photo-03.avif" type="image/avif">
+                            <source srcset="images/gallery/photo-03.webp" type="image/webp">
+                            <img src="images/gallery/photo-03.jpg" alt="American classic">
+                        </picture>
+                    </div>
+                    <div class="gallery__item">
+                        <picture>
+                            <source srcset="images/gallery/photo-04.avif" type="image/avif">
+                            <source srcset="images/gallery/photo-04.webp" type="image/webp">
+                            <img src="images/gallery/photo-04.jpg" alt="American classic">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -539,35 +531,33 @@
 
         <section id="map" class="map">
             <div class="overflow overflow-footer"></div>
-            <div class="container">
-                <div class="contacts-container">
-                    <div class="contacts">
-                        <p class="subtitle title-orange">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
-                            Decorum Tel <a href="tel:+79287683229">+7 (928) 768 32 29</a></p>
-                        <ul class="social-networks">
-                            <li id="email" class="social-networks__item">
-                                <a href="#" class="social-networks__link">
-                                    <img class="social-networks__img" src="images/svg/icon-envelope.svg" alt="email">
-                                </a>
-                            </li>
-    
-                            <li id="instagram" class="social-networks__item">
-                                <a href="#" class="social-networks__link">
-                                    <img class="social-networks__img" src="images/svg/icon-instagram.svg" alt="instagram">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="map-container">
-                        <img src="images/map.jpg" alt="map">
-                    </div>
+            <div class="container contacts-container">
+                <div class="contacts">
+                    <p class="subtitle title-orange">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
+                        Decorum Tel <a href="tel:+79287683229">+7 (928) 768 32 29</a></p>
+                    <ul class="social-networks">
+                        <li id="email" class="social-networks__item">
+                            <a href="#" class="social-networks__link">
+                                <img class="social-networks__img" src="images/svg/icon-envelope.svg" alt="email">
+                            </a>
+                        </li>
+
+                        <li id="instagram" class="social-networks__item">
+                            <a href="#" class="social-networks__link">
+                                <img class="social-networks__img" src="images/svg/icon-instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="map-container">
+                    <img src="images/map.jpg" alt="map">
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer bg-color">
-        <div class="container nav-container">
+        <div class="container nav-container nav-wrapper">
             <div class="logo"><a class="logo__link" href="index.html">IC "Repair Design Project"</a></div>
 
             <nav class="nav">
