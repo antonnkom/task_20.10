@@ -40,7 +40,7 @@ body * {
     border-radius: 2px;
 }
 
-.button-italic {
+.button--italic {
     font-style: italic;
 }
 
@@ -68,7 +68,7 @@ body * {
     width: 231px;
 }
 
-.submit {
+.button--regular-large {
     width: 200px;
 }
 
@@ -76,7 +76,7 @@ h1,
 .title,
 .subtitle,
 .catalog-title,
-.service-catalog__price,
+.button--bolder,
 .advantages-list__item::before,
 .review__info-item {
     font-family: Yeseva One, 'Times New Roman', Times, serif;
@@ -190,59 +190,68 @@ a {
     }
 }
 
-/* HEADER */
-.header-container {
+/* MENU */
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list__item {
+    padding-right: 47px;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.nav-list__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list__link:hover,
+.nav-list__link.nav-list__link--active {
+    color: var(--sf-orange);
+} 
+
+@media (max-width: 1300px) {
+    .nav {
+        display: none;
+    }
+}
+
+/* HEADER (NAV) */
+.nav-container {
     display: flex;
     height: 83px;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-nav-list {
-    display: flex;
-    list-style-type: none;
-}
-
-.logo a,
-.header-nav-list__item,
-.header-phone {
+.logo .logo__link,
+.nav-phone {
     font-size: 11px;
     line-height: 15px;
     text-transform: uppercase;
 }
 
-.logo a {
+.logo .logo__link {
     text-decoration: none;
 }
 
-.header-nav-list__item {
-    padding-right: 47px;
-}
-
-.header-nav-list__link {
-    text-decoration: none;
-    color: #fff;
-}
-
-.header-nav-list__link:hover {
-    color: var(--sf-orange);
-}
-
-.header-phone {
+.nav-phone {
     margin-right: 45px;
 }
 
 @media (max-width: 1300px) {
-    .header-container {
+    .nav-container {
         height: 70px;
     }
 
-    .header-nav,
-    .header-contacts .button {
+    .nav-contacts .button {
         display: none;
     }
 
-    .header-phone {
+    .nav-phone {
         margin: 0;
         text-decoration: none;
         color: #fff;
@@ -281,7 +290,7 @@ a {
 .hero-container h1 {
     color: #fff;
     font-size: 40px;
-    line-height: 53px;
+    line-height: 1.325;
     text-align: left;
     text-transform: uppercase;
 }
@@ -293,7 +302,7 @@ a {
 .hero-slogan {
     color: #fff;
     font-size: 22px;
-    line-height: 36px;
+    line-height: 1.64;
     text-align: left;
 }
 
@@ -857,7 +866,7 @@ a {
     padding-left: 15px;
 }
 
-.service-catalog__price {
+.button--bolder {
     position: absolute;
     font-size: 18px;
     line-height: 25px;
@@ -891,7 +900,7 @@ a {
         width: calc(100% - 70px);
     }
 
-    .service-catalog__price {
+    .button--bolder {
         font-size: 15px;
         line-height: 21px;
         padding: 10px 16px;
@@ -974,11 +983,13 @@ a {
 
 }
 
-.input-white {
+.input--black {
     border-color: rgba(255, 255, 255, .15);
+    background: var(--sf-black-back);
 }
 
-.input-white::placeholder {
+.input--black,
+.input--black::placeholder {
     color: #fff;
 }
 
@@ -995,7 +1006,7 @@ a {
     margin-bottom: 16px;
 }
 
-.button-in-black {
+.button--regular-thin {
     position: relative;
     left: 50%;
     margin-top: 39px;
@@ -1033,7 +1044,6 @@ a {
     border-radius: 50%;
     margin-right: 25px;
     box-shadow: 0px 3px 10px 0px var(--sf-orange-opacity-15);
-
 }
 
 @media (max-width: 1300px) {
@@ -1395,7 +1405,7 @@ a {
     margin-top: 46px;
 }
 
-.form-questions .button-in-black {
+.form-questions .button--regular-thin {
     padding-left: 54px;
     padding-right: 54px;
     margin-left: auto;
